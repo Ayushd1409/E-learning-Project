@@ -1,0 +1,51 @@
+[
+    {
+        "id":1,
+        "name":"Full Stack Development",
+        "title":"Full Stack Development",
+        "time":"14 Hours 25 Minute",
+        "price":"Rs.0",
+        "category":"test",
+        "image":"https://i.ytimg.com/vi/7OktqhxhrA4/maxresdefault.jpg"
+    },
+
+    {
+        "id":2,
+        "name":"App Development",
+        "title":"App Development",
+        "time":"11 Hours 55 Minute",
+        "price":"Rs.0",
+        "category":"test",
+        "image":"https://i.ytimg.com/vi/08DVR_3iHh4/maxresdefault.jpg"
+    },
+
+    {
+        "id":3,
+        "name":"Data Structures and Algo",
+        "title":"Data Structures and Algo",
+        "time":"44 Hours 15 Minute",
+        "price":"Rs.0",
+        "category":"test",
+        "image":"https://media.geeksforgeeks.org/img-practice/banner/DSA-tutorials-thumbnail-old.png?v=1601663400"
+    },
+
+    {
+        "id":4,
+        "name":"Cyber Security",
+        "title":"Cyber Security",
+        "time":"8 Hours 43 Minute",
+        "price":"Rs.0",
+        "category":"test",
+        "image":"https://i.ytimg.com/vi/PNzWBQAGtrg/maxresdefault.jpg"
+    },
+
+    {
+        "id":5,
+        "name":"Data Analytics",
+        "title":"Data Analytics",
+        "time":"14 Hours 33 Minute",
+        "price":"Rs.0",
+        "category":"test",
+        "image":"https://i.ytimg.com/vi/yZvFH7B6gKI/maxresdefault.jpg"
+    }
+]

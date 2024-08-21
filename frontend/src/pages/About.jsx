@@ -22,6 +22,10 @@ function About() {
           <div className="">
             <h1 className="text-5xl font-bold">About Us</h1>
             <h1 className="text-3xl font-bold mt-12">Welcome to StudyHive!</h1>
+            <h1 className="text-xl font-bold mt-12">Developed By Ayush Dewangan </h1>
+            <h1 className="text-xl font-bold mt-1">and Astitva Pathak </h1>
+
+
             <p className="py-6 w-96 text-justify">
             We believe in the power of knowledge and the potential of every individual to learn, grow, and succeed. Our mission is to make high-quality education accessible to everyone, anywhere, at any time.
             Whether you're here to learn or to teach, StudyHive is the perfect place to embark on your educational journey.

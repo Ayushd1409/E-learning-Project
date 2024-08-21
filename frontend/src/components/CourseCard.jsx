@@ -2,10 +2,29 @@ import React from "react";
 import { server } from "../main";
 import { UserData } from "../context/UserContext";
 import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
+import axios from "axios";
+import { CourseData } from "../context/CourseContext";
 
 function CourseCard({ course }) {
   const navigate = useNavigate();
   const { user, isAuth } = UserData();
+
+  const {fetchCourses}= CourseData();
+  const deleteHandler = async(id)=>{
+    if(confirm("Are you sure you want to delete??")){
+      try {
+        const {data} = await axios.delete(`${server}/api/course/${id}`,{headers:{
+          token: localStorage.getItem("token"),
+        },});
+  
+        toast.success(data.message);
+        fetchCourses();
+      } catch (error) {
+        toast.error(error.response.data.message)
+      }
+    }
+  }
   return (
     <>
       <div className="p-3">
@@ -16,7 +35,7 @@ function CourseCard({ course }) {
           <div className="card-body">
             <h2 className="card-title">
               {course.title}
-              <div className="badge badge-outline font-thin text-black">
+              <div className="badge font-thin text-red-700">
                 By {course.createdBy}
               </div>
             </h2>
@@ -65,7 +84,7 @@ function CourseCard({ course }) {
               )}
 
               {
-                user && user.role === "admin" && <button
+                user && user.role === "admin" && <button onClick={()=>deleteHandler(course._id)}
                 
                 className="badge badge-outline p-3 cursor-pointer bg-red-500 hover:bg-red-700 text-white duration-300"
               >Delete</button>

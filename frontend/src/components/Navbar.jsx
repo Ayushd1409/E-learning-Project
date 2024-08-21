@@ -28,7 +28,7 @@ function Navbar({isAuth}) {
         <a href="/courses">Course</a>
       </li>
       <li>
-        <a>Contact</a>
+        <a href="/contact">Contact</a>
       </li>
       <li>
         <a href="/about">About</a>
